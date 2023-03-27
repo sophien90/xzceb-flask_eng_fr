@@ -20,5 +20,6 @@ class TestF2E(unittest.TestCase):
     def test2(self):
         self.assertEqual(french_to_english('Mercredi'), 'Wednesday')
         self.assertEqual(french_to_english('Lundi'),'Monday')
+        self.assertNotEqual(french_to_english("None"), '')
 
 unittest.main()
